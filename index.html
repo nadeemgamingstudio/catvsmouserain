@@ -1,121 +1,1110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<a href="https://nadeemgamingstudio.github.io" class="fixed top-4 left-4 z-50 bg-secondary-bg text-accent-yellow px-4 py-2 rounded-full shadow-lg border border-border-dark hover:bg-gray-800 transition duration-300 flex items-center space-x-2">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span>Back to Studio</span>
-    </a>
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us — Nadeem Gaming Studio</title>
-<!-- Tailwind CSS CDN for modern styling -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Font: Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<style>
-  /* Custom styles for a subtle neon glow effect */
-  body {
-    font-family: 'Inter', sans-serif;
-    /* Dark, subtle background gradient */
-    background: linear-gradient(135deg, #0A0A0A 0%, #171717 100%);
-  }
-  .contact-card {
-    box-shadow: 0 0 30px rgba(0, 225, 255, 0.25), 0 0 10px rgba(0, 225, 255, 0.15);
-  }
-  .btn-glow:hover {
-    box-shadow: 0 0 15px rgba(0, 225, 255, 0.5);
-  }
-</style>
-</head>
-<body class="min-h-screen p-4 sm:p-8 flex flex-col justify-center items-center">
-
-<div class="container contact-card w-full max-w-2xl mx-auto p-6 md:p-10 bg-gray-900 rounded-2xl border border-cyan-600/30">
-    <h1 class="text-4xl font-extrabold text-center text-cyan-400 mb-2 tracking-tight">
-        Contact Studio Support
-    </h1>
-    <p class="text-center text-gray-400 mb-8 text-lg">
-        We're here to help you conquer any challenge.
-    </p>
-
-    <!-- Info Box: Highlighting support details -->
-    <div class="info-box bg-gray-800/70 p-4 mb-8 rounded-xl border border-cyan-500/30 text-gray-200">
-        <div class="space-y-2 text-sm md:text-base">
-            <p class="flex items-center">
-                <span class="text-xl text-cyan-400 mr-3">📧</span> Email Support Available Globally
-            </p>
-            <p class="flex items-center">
-                <span class="text-xl text-yellow-400 mr-3">⏱️</span> Our Support Team Will Respond Between <b>24–72 Hours</b>
-            </p>
-            <p class="flex items-center">
-                <span class="text-xl text-green-400 mr-3">💡</span> Describe your issue clearly for fast resolution
-            </p>
-        </div>
-    </div>
-
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/xeobboop" method="POST" class="space-y-5">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cat vs Mouse Rain – The Ultimate Reflex Challenge!</title>
+    <link rel="icon" type="image/png" href="https://nadeemgamingstudio.github.io/nadeemgamingstudio.ico" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0A0A0A',
+                        'secondary-bg': '#1a1a1a',
+                        'accent-pink': '#FF0066',
+                        'accent-yellow': '#FBD534',
+                        'accent-blue': '#00D4FF',
+                        'accent-purple': '#9D4EDD',
+                        'text-light': '#e5e5e5',
+                        'border-dark': '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 20px rgba(255, 0, 102, 0.8)',
+                        'neon-yellow': '0 0 20px rgba(251, 213, 52, 0.8)',
+                        'neon-blue': '0 0 20px rgba(0, 212, 255, 0.8)',
+                        'glow': '0 0 40px rgba(255, 0, 102, 0.6)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'rain-fall': 'rain-fall 15s linear infinite',
+                        'slide-in': 'slide-in 0.5s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Import Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400;700;900&display=swap');
         
-        <div>
-            <label for="name" class="block text-sm font-semibold text-cyan-200 mb-2">Your Name</label>
-            <!-- Input field (name preserved) -->
-            <input 
-                type="text" 
-                name="name" 
-                id="name" 
-                required 
-                placeholder="Enter your full name"
-                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner"
-            >
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Top Bar */
+        .top-animated-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, 
+                #ff0000, #ff9900, #ffff00, #33ff00, 
+                #0099ff, #6633ff, #ff00ff, #ff0000);
+            background-size: 800% 100%;
+            animation: colorSlide 10s linear infinite;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        /* Animated Side Bars */
+        .side-animated-bar {
+            position: fixed;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                #ff0000, #ff9900, #ffff00, #33ff00, 
+                #0099ff, #6633ff, #ff00ff, #ff0000);
+            background-size: 100% 800%;
+            animation: colorSlideVertical 15s linear infinite;
+            z-index: 99;
+        }
+        
+        .left-bar {
+            left: 0;
+        }
+        
+        .right-bar {
+            right: 0;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+            background: #111;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #FF0066, #FBD534);
+            border-radius: 10px;
+        }
+        
+        /* Animations */
+        @keyframes colorSlide {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 800% 0%;
+            }
+        }
+        
+        @keyframes colorSlideVertical {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 0% 800%;
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes wiggle {
+            0%, 100% {
+                transform: rotate(-3deg);
+            }
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+        
+        @keyframes rain-fall {
+            0% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(calc(100vh + 100px));
+            }
+        }
+        
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Particle Background */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        /* Mouse Rain Animation */
+        .mouse-rain {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* Game Card Hover Effects */
+        .game-card {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.7s;
+        }
+        
+        .game-card:hover::before {
+            left: 100%;
+        }
+        
+        /* Screenshot Gallery */
+        .screenshot-gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: #FF0066 #1a1a1a;
+        }
+        
+        .screenshot-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .screenshot-gallery::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 10px;
+        }
+        
+        .screenshot-gallery::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #FF0066, #FBD534);
+            border-radius: 10px;
+        }
+        
+        .screenshot-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 280px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .screenshot-item:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Modal for Full Screen Screenshots */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-image {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(255, 0, 102, 0.7);
+            animation: slide-in 0.5s ease-out;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 1001;
+        }
+        
+        .close-modal:hover {
+            color: #FF0066;
+            transform: rotate(90deg);
+        }
+        
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        
+        .modal-nav:hover {
+            color: #FF0066;
+        }
+        
+        .modal-prev {
+            left: 20px;
+        }
+        
+        .modal-next {
+            right: 20px;
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #FF0066, #FBD534);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(255, 0, 102, 0.7);
+        }
+        
+        .scroll-top-btn.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-top-btn:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(255, 0, 102, 0.9);
+        }
+        
+        /* Rating Stars */
+        .rating-stars {
+            color: #FBD534;
+            font-size: 24px;
+        }
+        
+        /* Game Trailer Section */
+        .trailer-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
+        
+        .trailer-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,0,102,0.2), rgba(251,213,52,0.2));
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* Download Button Animation */
+        .download-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        
+        .download-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.7s;
+        }
+        
+        .download-btn:hover::after {
+            left: 100%;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .side-animated-bar {
+                display: none;
+            }
+            .scroll-top-btn {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .screenshot-item {
+                width: 250px;
+            }
+            .modal-nav {
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-primary-bg text-text-light min-h-screen antialiased">
+    
+    <!-- Animated Color Bars -->
+    <div class="top-animated-bar"></div>
+    <div class="side-animated-bar left-bar"></div>
+    <div class="side-animated-bar right-bar"></div>
+    
+    <!-- Particle Background -->
+    <div class="particles" id="particles-js"></div>
+    
+    <!-- Mouse Rain Animation -->
+    <div id="mouseRain"></div>
+    
+    <!-- Modal for Full Screen Screenshots -->
+    <div id="screenshotModal" class="modal-overlay">
+        <span class="close-modal">&times;</span>
+        <div class="modal-nav modal-prev">
+            <i class="fas fa-chevron-left"></i>
         </div>
-
-        <div>
-            <label for="email" class="block text-sm font-semibold text-cyan-200 mb-2">Your Email</label>
-            <!-- Input field (name preserved) -->
-            <input 
-                type="email" 
-                name="email" 
-                id="email" 
-                required 
-                placeholder="you@example.com"
-                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner"
-            >
+        <img id="modalImg" class="modal-image" src="" alt="Game Screenshot">
+        <div class="modal-nav modal-next">
+            <i class="fas fa-chevron-right"></i>
         </div>
-
-        <div>
-            <label for="message" class="block text-sm font-semibold text-cyan-200 mb-2">Your Message</label>
-            <!-- Textarea field (name preserved) -->
-            <textarea 
-                name="message" 
-                id="message" 
-                rows="5" 
-                required 
-                placeholder="Tell us how we can help..."
-                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner resize-y"
-            ></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <button 
-            type="submit" 
-            class="btn-glow w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-extrabold text-lg rounded-xl transition duration-300 transform hover:scale-[1.01] shadow-lg shadow-cyan-500/50"
-        >
-            Send Message
-        </button>
-    </form>
-
-    <div class="mt-8 text-center">
-        <h2 class="text-2xl font-bold text-cyan-400 mb-2">Need Help?</h2>
-        <p class="text-gray-400">
-            You can contact us for App Support, Bug Reports, Developer Help, Account Issues & more.
-        </p>
     </div>
-</div>
+    
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<footer class="mt-12 text-center text-gray-500 text-sm">
-    &copy; 2025 Nadeem Gaming Studio — All Rights Reserved
-</footer>
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-secondary-bg/90 backdrop-blur-md shadow-2xl shadow-black/70 border-b-2 border-accent-pink">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <div class="flex items-center space-x-3" data-aos="fade-right" data-aos-duration="1000">
+                <div class="relative">
+                    <a href="https://nadeemgamingstudio.github.io">
+                        <img src="nadeemgamingstudio.ico" alt="Nadeem Studio Logo" 
+                             class="h-10 w-10 rounded-xl border-2 border-accent-yellow p-0.5 animate-spin-slow"
+                             onerror="this.src='https://placehold.co/40x40/1a1a1a/f06?text=NGS'">
+                    </a>
+                    <div class="absolute -top-1 -right-1 h-4 w-4 bg-accent-pink rounded-full animate-pulse"></div>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-wider text-white font-orbitron bg-gradient-to-r from-accent-pink to-accent-yellow bg-clip-text text-transparent">
+                        NAD<span class="text-accent-yellow">EE</span>M GAMING
+                    </span>
+                    <div class="text-xs text-accent-blue font-bold tracking-widest uppercase mt-0.5">
+                        <i class="fas fa-gamepad mr-1"></i> STUDIO
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="space-x-4 flex items-center" data-aos="fade-left" data-aos-duration="1000">
+                <a href="https://nadeemgamingstudio.github.io" 
+                   class="relative group px-5 py-2.5 rounded-xl font-bold transition-all duration-300 overflow-hidden">
+                    <span class="relative z-10 text-white flex items-center">
+                        <i class="fas fa-home mr-2"></i> HOME
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-accent-pink to-accent-yellow opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border-2 border-accent-pink rounded-xl"></div>
+                </a>
+                
+                <a href="https://nadeemgamingstudio.github.io/Contact" 
+                   class="relative group px-5 py-2.5 rounded-xl font-bold transition-all duration-300 overflow-hidden">
+                    <span class="relative z-10 text-white flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> CONTACT
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-accent-blue to-accent-purple opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 border-2 border-accent-blue rounded-xl"></div>
+                </a>
+                
+                <!-- Back to Studio Button -->
+                <a href="https://nadeemgamingstudio.github.io" 
+                   class="relative group px-5 py-2.5 rounded-xl font-bold transition-all duration-300 overflow-hidden bg-accent-yellow/20">
+                    <span class="relative z-10 text-white flex items-center">
+                        <i class="fas fa-arrow-left mr-2"></i> BACK TO STUDIO
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+        
+        <!-- Game Hero Section -->
+        <section class="mb-16" data-aos="fade-up" data-aos-duration="1200">
+            <div class="relative bg-gradient-to-br from-gray-900 to-black p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-800 overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-pink via-accent-yellow to-accent-blue"></div>
+                
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <!-- Game Icon and Title -->
+                    <div class="text-center lg:text-left lg:w-2/5">
+                        <div class="relative mb-8 mx-auto lg:mx-0" style="max-width: 200px;">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/icon.png" 
+                                 alt="Cat vs Mouse Rain Icon" 
+                                 class="w-full rounded-3xl border-4 border-accent-yellow shadow-2xl shadow-accent-yellow/50 animate-float"
+                                 onerror="this.src='https://placehold.co/200x200/1a1a1a/fbd534?text=CAT+MOUSE'">
+                            <div class="absolute -top-3 -right-3 w-12 h-12 bg-accent-pink rounded-full flex items-center justify-center text-white animate-bounce-slow">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                        </div>
+                        
+                        <h1 class="text-4xl md:text-5xl font-black mb-4 font-orbitron">
+                            <span class="bg-gradient-to-r from-accent-pink via-accent-yellow to-accent-blue bg-clip-text text-transparent">
+                                CAT VS MOUSE
+                            </span>
+                            <span class="block text-3xl md:text-4xl text-white mt-2">RAIN</span>
+                        </h1>
+                        
+                        <p class="text-xl text-accent-yellow italic mb-6 animate-pulse">
+                            "Tap. Dodge. Survive. How Long Can You Last?"
+                        </p>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center justify-center lg:justify-start mb-6">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-3 text-gray-300">4.7/5</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Graphic and Download -->
+                    <div class="lg:w-3/5">
+                        <div class="trailer-container mb-8">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/Feature.png" 
+                                 alt="Cat vs Mouse Rain Feature Graphic" 
+                                 class="w-full rounded-2xl"
+                                 onerror="this.src='https://placehold.co/1024x500/1a1a1a/ff0066?text=CAT+VS+MOUSE+RAIN'">
+                        </div>
+                        
+                        <!-- Download Button -->
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-white mb-6">
+                                <i class="fas fa-download text-accent-blue mr-3"></i>
+                                Download Now and Start Dodging!
+                            </p>
+                            
+                            <a href="https://play.google.com/store/apps/details?id=com.CatvsMouseRain" 
+                               target="_blank" 
+                               class="download-btn inline-block bg-gradient-to-r from-accent-pink to-accent-yellow text-gray-900 font-extrabold py-4 px-12 rounded-2xl uppercase tracking-widest text-lg shadow-2xl shadow-accent-pink/50 hover:shadow-glow hover:scale-105 transition-all duration-300">
+                                <span class="flex items-center justify-center">
+                                    <i class="fab fa-google-play text-2xl mr-3"></i>
+                                    GET IT ON GOOGLE PLAY
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Game Screenshots Section -->
+        <section class="mb-20" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl shadow-2xl border border-gray-800">
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                    <i class="fas fa-images text-accent-yellow mr-4"></i>
+                    <span class="bg-gradient-to-r from-accent-pink to-accent-yellow bg-clip-text text-transparent">
+                        Game Screenshots
+                    </span>
+                </h2>
+                
+                <div class="screenshot-gallery pb-6">
+                    <!-- Screenshot 1 -->
+                    <div class="screenshot-item" data-index="0">
+                        <div class="bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-accent-pink transition duration-300">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/1.png" 
+                                 alt="Game Screenshot 1" 
+                                 class="w-full h-64 object-cover"
+                                 onerror="this.src='https://placehold.co/300x500/1a1a1a/ff0066?text=Screenshot+1'">
+                            <div class="p-4 bg-gray-900">
+                                <p class="text-center text-sm text-gray-300">Tap to dodge falling mice!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Screenshot 2 -->
+                    <div class="screenshot-item" data-index="1">
+                        <div class="bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-accent-yellow transition duration-300">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/2.png" 
+                                 alt="Game Screenshot 2" 
+                                 class="w-full h-64 object-cover"
+                                 onerror="this.src='https://placehold.co/300x500/1a1a1a/fbd534?text=Screenshot+2'">
+                            <div class="p-4 bg-gray-900">
+                                <p class="text-center text-sm text-gray-300">Score increases as you survive!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Screenshot 3 -->
+                    <div class="screenshot-item" data-index="2">
+                        <div class="bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-accent-blue transition duration-300">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/3.png" 
+                                 alt="Game Screenshot 3" 
+                                 class="w-full h-64 object-cover"
+                                 onerror="this.src='https://placehold.co/300x500/1a1a1a/00d4ff?text=Screenshot+3'">
+                            <div class="p-4 bg-gray-900">
+                                <p class="text-center text-sm text-gray-300">Beautiful cartoon graphics!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Screenshot 4 -->
+                    <div class="screenshot-item" data-index="3">
+                        <div class="bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-accent-purple transition duration-300">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/4.png" 
+                                 alt="Game Screenshot 4" 
+                                 class="w-full h-64 object-cover"
+                                 onerror="this.src='https://placehold.co/300x500/1a1a1a/9d4edd?text=Screenshot+4'">
+                            <div class="p-4 bg-gray-900">
+                                <p class="text-center text-sm text-gray-300">Increasing difficulty!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Screenshot 5 -->
+                    <div class="screenshot-item" data-index="4">
+                        <div class="bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-accent-pink transition duration-300">
+                            <img src="https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/5.png" 
+                                 alt="Game Screenshot 5" 
+                                 class="w-full h-64 object-cover"
+                                 onerror="this.src='https://placehold.co/300x500/1a1a1a/ff0066?text=Screenshot+5'">
+                            <div class="p-4 bg-gray-900">
+                                <p class="text-center text-sm text-gray-300">Beat your high score!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-mouse-pointer text-accent-yellow mr-2"></i>
+                        Click on any screenshot to view in full screen
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Description and Features -->
+        <section class="mb-20">
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Game Description -->
+                <div class="bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl shadow-2xl border border-gray-800" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-paw text-accent-pink mr-4"></i>
+                        <span class="bg-gradient-to-r from-accent-pink to-accent-yellow bg-clip-text text-transparent">
+                            The Ultimate Reflex Challenge
+                        </span>
+                    </h3>
+                    
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        Get ready for a fast-paced, heart-pounding, and wildly entertaining arcade game where your only mission is survival! In <span class="text-accent-yellow font-bold">Cat vs Mouse Rain</span>, you play as a cute, cartoon-style cat dodging a relentless shower of falling mice while staying firmly on the road.
+                    </p>
+                    
+                    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+                        The more mice you escape, the higher your score – but don't blink, because the pace keeps getting faster! Perfect for quick gaming sessions and challenging your reflexes.
+                    </p>
+                    
+                    <!-- Game Stats -->
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center p-4 bg-gray-800/50 rounded-2xl border border-gray-700">
+                            <div class="text-3xl font-bold text-accent-yellow mb-2">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="text-sm text-gray-300">Increasing Speed</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-800/50 rounded-2xl border border-gray-700">
+                            <div class="text-3xl font-bold text-accent-pink mb-2">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <div class="text-sm text-gray-300">Endless Gameplay</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game Features -->
+                <div class="bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl shadow-2xl border border-gray-800" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-star text-accent-yellow mr-4"></i>
+                        <span class="bg-gradient-to-r from-accent-yellow to-accent-blue bg-clip-text text-transparent">
+                            Key Features
+                        </span>
+                    </h3>
+                    
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-accent-pink/20 flex items-center justify-center text-accent-pink mr-4">
+                                <i class="fas fa-mouse-pointer"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Simple Controls</h4>
+                                <p class="text-gray-400">Tap left or right to move the cat. Easy to learn, hard to master!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-accent-yellow/20 flex items-center justify-center text-accent-yellow mr-4">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Addictive Gameplay</h4>
+                                <p class="text-gray-400">Each second you survive adds to your high score. Challenge yourself!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-accent-blue/20 flex items-center justify-center text-accent-blue mr-4">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Beautiful Graphics</h4>
+                                <p class="text-gray-400">Cartoon-style visuals with road, trees, mountains, and clouds.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-accent-purple/20 flex items-center justify-center text-accent-purple mr-4">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Fun Soundtrack</h4>
+                                <p class="text-gray-400">Light and fun background music that enhances the gameplay.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-gray-800/50 rounded-2xl border border-gray-700">
+                        <p class="text-gray-300 text-sm">
+                            <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                            <span class="font-semibold">Family-friendly</span> and suitable for all ages. No internet connection required!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="mb-20" data-aos="fade-up">
+            <div class="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl shadow-2xl border border-gray-800">
+                <h3 class="text-3xl font-bold text-white mb-8 text-center">
+                    <span class="bg-gradient-to-r from-accent-pink to-accent-yellow bg-clip-text text-transparent">
+                        How to Play
+                    </span>
+                </h3>
+                
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="relative mx-auto mb-6">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-accent-pink to-accent-yellow flex items-center justify-center text-3xl text-white font-bold">
+                                1
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent-blue flex items-center justify-center text-white animate-bounce-slow">
+                                <i class="fas fa-hand-point-up"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Touch to Move</h4>
+                        <p class="text-gray-400">Tap the left or right side of the screen to move the cat horizontally.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="relative mx-auto mb-6">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-accent-yellow to-accent-blue flex items-center justify-center text-3xl text-white font-bold">
+                                2
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent-pink flex items-center justify-center text-white animate-bounce-slow">
+                                <i class="fas fa-running"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Dodge the Mice</h4>
+                        <p class="text-gray-400">Avoid all falling mice. If one hits you, it's game over!</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="relative mx-auto mb-6">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-accent-blue to-accent-purple flex items-center justify-center text-3xl text-white font-bold">
+                                3
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent-yellow flex items-center justify-center text-white animate-bounce-slow">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Watch Your Score</h4>
+                        <p class="text-gray-400">Your score increases the longer you survive the mouse rain.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div class="relative mx-auto mb-6">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-r from-accent-purple to-accent-pink flex items-center justify-center text-3xl text-white font-bold">
+                                4
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent-blue flex items-center justify-center text-white animate-bounce-slow">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Beat Your Record</h4>
+                        <p class="text-gray-400">Try again and beat your high score. Challenge your reflexes!</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <div class="inline-block p-6 bg-gray-800/50 rounded-2xl border border-accent-yellow/30">
+                        <p class="text-xl font-bold text-white mb-3">
+                            <i class="fas fa-lightbulb text-accent-yellow mr-3"></i>
+                            Pro Tip
+                        </p>
+                        <p class="text-gray-300">
+                            Start slow and focus on timing. As the speed increases, anticipate mouse patterns!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download CTA Section -->
+        <section class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="bg-gradient-to-r from-accent-pink/10 to-accent-yellow/10 p-10 rounded-3xl border-2 border-dashed border-accent-pink/50">
+                <h3 class="text-4xl font-bold text-white mb-6">
+                    Ready to Test Your Reflexes?
+                </h3>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Download Cat vs Mouse Rain now and see how long you can survive the mouse downpour!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8">
+                    <a href="https://play.google.com/store/apps/details?id=com.CatvsMouseRain" 
+                       target="_blank" 
+                       class="download-btn bg-gradient-to-r from-accent-pink to-accent-yellow text-gray-900 font-extrabold py-4 px-10 rounded-2xl uppercase tracking-widest text-lg shadow-2xl shadow-accent-pink/50 hover:shadow-glow hover:scale-105 transition-all duration-300">
+                        <span class="flex items-center justify-center">
+                            <i class="fab fa-google-play text-2xl mr-3"></i>
+                            Download on Google Play
+                        </span>
+                    </a>
+                    
+                    <a href="https://nadeemgamingstudio.github.io/catvsmouserain/privacypolicy" 
+                       target="_blank"
+                       class="bg-gray-800 text-white font-bold py-4 px-10 rounded-2xl uppercase tracking-widest text-lg border-2 border-gray-700 hover:border-accent-blue hover:shadow-neon-blue transition-all duration-300">
+                        <span class="flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-accent-blue mr-3"></i>
+                            Privacy Policy
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="text-gray-400 text-sm">
+                    <p class="mb-2">
+                        <i class="fas fa-info-circle text-accent-yellow mr-2"></i>
+                        Cat vs Mouse Rain is free to play and requires no internet connection.
+                    </p>
+                    <p>
+                        <i class="fas fa-mobile-alt text-accent-blue mr-2"></i>
+                        Optimized for all Android phones – perfect for playing on the go!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-bg border-t-2 border-accent-pink/30 py-10 mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10 mb-10">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="nadeemgamingstudio.ico" alt="Nadeem Studio Logo" class="h-10 w-10 rounded-xl">
+                        <span class="text-xl font-black tracking-wider text-white font-orbitron">NADEEM GAMING</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Creating fun, engaging and memorable gaming experiences for players worldwide.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 border-l-4 border-accent-yellow pl-3">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://nadeemgamingstudio.github.io" class="text-gray-400 hover:text-accent-pink transition duration-300"><i class="fas fa-chevron-right text-xs mr-2"></i> Home</a></li>
+                        <li><a href="https://nadeemgamingstudio.github.io/Contact" class="text-gray-400 hover:text-accent-yellow transition duration-300"><i class="fas fa-chevron-right text-xs mr-2"></i> Contact</a></li>
+                        <li><a href="https://nadeemgamingstudio.github.io/catvsmouserain/privacypolicy" class="text-gray-400 hover:text-accent-blue transition duration-300"><i class="fas fa-chevron-right text-xs mr-2"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 border-l-4 border-accent-pink pl-3">More Games</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://nadeemgamingstudio.github.io/catvsmouserain" class="text-gray-400 hover:text-accent-yellow transition duration-300"><i class="fas fa-chevron-right text-xs mr-2 text-accent-yellow"></i> Cat vs Mouse Rain</a></li>
+                        <li><a href="https://nadeemgamingstudio.github.io/guessspellopic" class="text-gray-400 hover:text-accent-blue transition duration-300"><i class="fas fa-chevron-right text-xs mr-2"></i> Guess SpelloPic</a></li>
+                        <li><a href="https://nadeemgamingstudio.github.io/12TestersTestersCommunity" class="text-gray-400 hover:text-accent-purple transition duration-300"><i class="fas fa-chevron-right text-xs mr-2"></i> 12 Testers Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        &copy; 2025 <span class="text-accent-yellow font-bold">Nadeem Gaming Studio</span>. All Rights Reserved.
+                    </div>
+                    <div>
+                        <span class="text-accent-pink font-bold">Cat vs Mouse Rain</span> - Crafted with <i class="fas fa-heart text-accent-pink mx-1"></i> by Mr. Nadeem
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                offset: 100
+            });
+            
+            // Scroll to Top Button
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollTopBtn.classList.add('active');
+                } else {
+                    scrollTopBtn.classList.remove('active');
+                }
+            });
+            
+            scrollTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Mouse Rain Animation
+            const mouseRainContainer = document.getElementById('mouseRain');
+            const mouseEmojis = ['🐭', '🐁', '🐀'];
+            
+            function createMouseRain() {
+                if (mouseRainContainer.children.length > 20) return;
+                
+                const mouse = document.createElement('div');
+                mouse.className = 'mouse-rain';
+                mouse.innerHTML = mouseEmojis[Math.floor(Math.random() * mouseEmojis.length)];
+                mouse.style.left = Math.random() * 100 + 'vw';
+                mouse.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                mouse.style.opacity = Math.random() * 0.7 + 0.3;
+                mouse.style.animation = `rain-fall ${Math.random() * 10 + 10}s linear forwards`;
+                mouse.style.animationDelay = Math.random() * 5 + 's';
+                
+                mouseRainContainer.appendChild(mouse);
+                
+                // Remove mouse after animation completes
+                setTimeout(() => {
+                    if (mouse.parentNode) {
+                        mouse.remove();
+                    }
+                }, 15000);
+            }
+            
+            // Create initial mouse rain
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createMouseRain, i * 500);
+            }
+            
+            // Continue mouse rain
+            setInterval(createMouseRain, 1000);
+            
+            // Simple Particle Effect
+            const particlesContainer = document.querySelector('.particles');
+            const colors = ['#FF0066', '#FBD534', '#00D4FF', '#9D4EDD'];
+            
+            for (let i = 0; i < 40; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = Math.random() * 5 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.borderRadius = '50%';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.top = Math.random() * 100 + 'vh';
+                particle.style.opacity = Math.random() * 0.5 + 0.2;
+                particle.style.boxShadow = `0 0 ${Math.random() * 10 + 5}px currentColor`;
+                
+                // Add animation
+                particle.style.animation = `float ${Math.random() * 10 + 10}s linear infinite`;
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Screenshot Modal Functionality
+            const modal = document.getElementById('screenshotModal');
+            const modalImg = document.getElementById('modalImg');
+            const closeModal = document.querySelector('.close-modal');
+            const prevBtn = document.querySelector('.modal-prev');
+            const nextBtn = document.querySelector('.modal-next');
+            const screenshotItems = document.querySelectorAll('.screenshot-item');
+            
+            let currentScreenshotIndex = 0;
+            const screenshotUrls = [
+                'https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/1.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/2.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/3.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/4.png',
+                'https://raw.githubusercontent.com/nadeemgamingstudio/catvsmouserain/refs/heads/main/5.png'
+            ];
+            
+            // Open modal when screenshot is clicked
+            screenshotItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    currentScreenshotIndex = index;
+                    modal.style.display = 'flex';
+                    modalImg.src = screenshotUrls[index];
+                });
+            });
+            
+            // Close modal
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // Navigate between screenshots
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentScreenshotIndex = (currentScreenshotIndex - 1 + screenshotUrls.length) % screenshotUrls.length;
+                modalImg.src = screenshotUrls[currentScreenshotIndex];
+            });
+            
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentScreenshotIndex = (currentScreenshotIndex + 1) % screenshotUrls.length;
+                modalImg.src = screenshotUrls[currentScreenshotIndex];
+            });
+            
+            // Keyboard navigation for screenshots
+            document.addEventListener('keydown', (e) => {
+                if (modal.style.display === 'flex') {
+                    if (e.key === 'Escape') {
+                        modal.style.display = 'none';
+                    } else if (e.key === 'ArrowLeft') {
+                        currentScreenshotIndex = (currentScreenshotIndex - 1 + screenshotUrls.length) % screenshotUrls.length;
+                        modalImg.src = screenshotUrls[currentScreenshotIndex];
+                    } else if (e.key === 'ArrowRight') {
+                        currentScreenshotIndex = (currentScreenshotIndex + 1) % screenshotUrls.length;
+                        modalImg.src = screenshotUrls[currentScreenshotIndex];
+                    }
+                }
+            });
+            
+            // Download button animation
+            const downloadButtons = document.querySelectorAll('.download-btn');
+            downloadButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Add temporary animation
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Downloading...';
+                    this.style.pointerEvents = 'none';
+                    
+                    // Reset after 2 seconds
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.pointerEvents = 'auto';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
