@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<a href="https://nadeemgamingstudio.github.io" class="fixed top-4 left-4 z-50 bg-secondary-bg text-accent-yellow px-4 py-2 rounded-full shadow-lg border border-border-dark hover:bg-gray-800 transition duration-300 flex items-center space-x-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span>Back to Studio</span>
+    </a>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Nadeem Gaming Studio</title>
+<!-- Tailwind CSS CDN for modern styling -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Font: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  /* Custom styles for a subtle neon glow effect */
+  body {
+    font-family: 'Inter', sans-serif;
+    /* Dark, subtle background gradient */
+    background: linear-gradient(135deg, #0A0A0A 0%, #171717 100%);
+  }
+  .contact-card {
+    box-shadow: 0 0 30px rgba(0, 225, 255, 0.25), 0 0 10px rgba(0, 225, 255, 0.15);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 15px rgba(0, 225, 255, 0.5);
+  }
+</style>
+</head>
+<body class="min-h-screen p-4 sm:p-8 flex flex-col justify-center items-center">
+
+<div class="container contact-card w-full max-w-2xl mx-auto p-6 md:p-10 bg-gray-900 rounded-2xl border border-cyan-600/30">
+    <h1 class="text-4xl font-extrabold text-center text-cyan-400 mb-2 tracking-tight">
+        Contact Studio Support
+    </h1>
+    <p class="text-center text-gray-400 mb-8 text-lg">
+        We're here to help you conquer any challenge.
+    </p>
+
+    <!-- Info Box: Highlighting support details -->
+    <div class="info-box bg-gray-800/70 p-4 mb-8 rounded-xl border border-cyan-500/30 text-gray-200">
+        <div class="space-y-2 text-sm md:text-base">
+            <p class="flex items-center">
+                <span class="text-xl text-cyan-400 mr-3">📧</span> Email Support Available Globally
+            </p>
+            <p class="flex items-center">
+                <span class="text-xl text-yellow-400 mr-3">⏱️</span> Our Support Team Will Respond Between <b>24–72 Hours</b>
+            </p>
+            <p class="flex items-center">
+                <span class="text-xl text-green-400 mr-3">💡</span> Describe your issue clearly for fast resolution
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xeobboop" method="POST" class="space-y-5">
+        
+        <div>
+            <label for="name" class="block text-sm font-semibold text-cyan-200 mb-2">Your Name</label>
+            <!-- Input field (name preserved) -->
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                placeholder="Enter your full name"
+                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner"
+            >
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-semibold text-cyan-200 mb-2">Your Email</label>
+            <!-- Input field (name preserved) -->
+            <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                placeholder="you@example.com"
+                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner"
+            >
+        </div>
+
+        <div>
+            <label for="message" class="block text-sm font-semibold text-cyan-200 mb-2">Your Message</label>
+            <!-- Textarea field (name preserved) -->
+            <textarea 
+                name="message" 
+                id="message" 
+                rows="5" 
+                required 
+                placeholder="Tell us how we can help..."
+                class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200 shadow-inner resize-y"
+            ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+            type="submit" 
+            class="btn-glow w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-extrabold text-lg rounded-xl transition duration-300 transform hover:scale-[1.01] shadow-lg shadow-cyan-500/50"
+        >
+            Send Message
+        </button>
+    </form>
+
+    <div class="mt-8 text-center">
+        <h2 class="text-2xl font-bold text-cyan-400 mb-2">Need Help?</h2>
+        <p class="text-gray-400">
+            You can contact us for App Support, Bug Reports, Developer Help, Account Issues & more.
+        </p>
+    </div>
+</div>
+
+<footer class="mt-12 text-center text-gray-500 text-sm">
+    &copy; 2025 Nadeem Gaming Studio — All Rights Reserved
+</footer>
+
+</body>
+</html>
